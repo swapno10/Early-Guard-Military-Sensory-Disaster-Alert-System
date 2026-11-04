@@ -26,28 +26,7 @@ The project aims to explore how interconnected sensor nodes can support early aw
 | ESP32 Node 2 | Receives mesh alerts and activates local warnings |
 | ESP32 Node 3 | Receives mesh alerts and activates local warnings |
 
-flowchart TD
-    A[ADXL345 Accelerometer]
-    B[HC-SR04 Ultrasonic Sensor]
-    C[Rain Sensor]
-    D[Soil Moisture Sensor]
-    E[DHT11 Temperature and Humidity]
-
-    A --> N1
-    B --> N1
-    C --> N1
-    D --> N1
-    E --> N1
-
-    N1[ESP32 Node 1<br/>Sensor Monitoring and Alert Evaluation]
-
-    N1 --> M[ painlessMesh Network<br/>JSON Alert Broadcast ]
-
-    M --> N2[ESP32 Node 2<br/>Mesh Receiver]
-    M --> N3[ESP32 Node 3<br/>Mesh Receiver]
-
-    N2 --> O2[LED + 5V Siren]
-    N3 --> O3[LED + 5V Siren]
+![EarlyGuard Project](Images/your-photo-name.jpg)
 
 ## Hardware Components
 
