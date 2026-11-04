@@ -28,6 +28,18 @@ The project aims to explore how interconnected sensor nodes can support early aw
 
 ![EarlyGuard Project](Images/mermaid-diagram.png)
 
+## Project Demonstration
+
+The following photograph showcases the implemented EarlyGuard hardware prototype.
+
+![EarlyGuard Hardware Setup](Images/earlyguard_complete_setup.jpg)
+
+### Demonstration Highlights
+- Sensor-based environmental monitoring.
+- ESP32 mesh communication between three nodes.
+- Wireless transmission of alert messages.
+- Local LED and siren-based warning system.
+
 ## Hardware Components
 
 - 3 × ESP32 development boards
