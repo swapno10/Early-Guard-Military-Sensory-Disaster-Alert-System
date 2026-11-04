@@ -92,9 +92,11 @@ The firmware uses the following mesh configuration:
 
 Refer to [Hardware and Upload Notes](Documentation/HARDWARE_AND_UPLOAD_NOTES.md) for additional information.
 
-## Current Project Status
+## Project Status
 
-Project Status: Completed Prototype
+<badge color="success">Completed</badge>
+
+**Development Stage:** Completed Working Prototype
 
 The firmware and multi-node architecture are being organized and developed. Further testing, calibration and validation are required.
 
