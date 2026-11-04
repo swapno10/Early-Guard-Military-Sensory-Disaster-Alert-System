@@ -26,7 +26,7 @@ The project aims to explore how interconnected sensor nodes can support early aw
 | ESP32 Node 2 | Receives mesh alerts and activates local warnings |
 | ESP32 Node 3 | Receives mesh alerts and activates local warnings |
 
-![EarlyGuard Project](Images/your-photo-name.jpg)
+![EarlyGuard Project](Images/mermaid-diagram.png)
 
 ## Hardware Components
 
