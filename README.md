@@ -1,24 +1,122 @@
 # EarlyGuard – Community-Driven Disaster Early Warning System
 
-EarlyGuard is an IoT-based disaster detection and early warning system designed to identify potential natural disasters such as earthquakes, floods, and landslides. The system integrates multiple sensors with ESP32 microcontrollers and mesh networking technology to enable decentralized communication and timely alerts, particularly in rural and connectivity-challenged regions.
+<p align="center">
+  <strong>An ESP32-Based Mesh Network for Local Disaster Alerting</strong>
+</p>
 
-### Key Features
-- **Earthquake Detection:** Uses an ADXL345 accelerometer to monitor ground vibrations.
-- **Flood Detection:** Uses an ultrasonic sensor to monitor water levels.
-- **Rainfall Monitoring:** Integrates a rain sensor to detect rainfall intensity.
-- **Landslide Risk Monitoring:** Uses a soil moisture sensor to monitor changing soil conditions.
-- **Mesh Networking:** Enables communication between ESP32 nodes without depending on conventional internet connectivity.
-- **Emergency Alerts:** Designed to trigger local sirens when predefined warning thresholds are exceeded.
+## About the Project
 
-### Technologies & Hardware
-- ESP32
+EarlyGuard is an IoT-based disaster early warning prototype designed to monitor environmental conditions and distribute local alerts through an ESP32-based wireless mesh network.
+
+The project aims to explore how interconnected sensor nodes can support early awareness of potential hazards, particularly in rural and remote areas where reliable internet connectivity may be limited.
+
+## Key Features
+
+- **Wireless Mesh Communication:** Uses painlessMesh for communication between ESP32 nodes.
+- **Environmental Monitoring:** Collects sensor data for vibration, rainfall, soil moisture, water-level distance, temperature and humidity.
+- **Local Warning System:** Uses LEDs and sirens to provide visual and audible alerts.
+- **JSON-Based Messaging:** Shares sensor and alert information between nodes.
+- **Multi-Node Architecture:** Uses one sensor node and two receiver nodes.
+
+## System Architecture
+
+| Node | Function |
+|---|---|
+| ESP32 Node 1 | Sensor monitoring, alert evaluation and mesh broadcasting |
+| ESP32 Node 2 | Receives mesh alerts and activates local warnings |
+| ESP32 Node 3 | Receives mesh alerts and activates local warnings |
+
+## Hardware Components
+
+- 3 × ESP32 development boards
+- ADXL345 accelerometer
+- HC-SR04 ultrasonic sensor
+- Rain sensor
+- Soil moisture sensor
+- DHT11 temperature and humidity sensor
+- 3 × LEDs
+- 3 × 5V sirens
+- MOSFET/transistor driver circuits
+- Breadboards and jumper wires
+
+## Software and Technologies
+
 - Arduino IDE
 - Embedded C/C++
-- ADXL345 Accelerometer
-- HC-SR04 Ultrasonic Sensor
-- Rain Sensor
-- Soil Moisture Sensor
-- ESP32 Mesh Networking
+- painlessMesh
+- ArduinoJson
+- ESP32
+- IoT and wireless mesh networking
 
-### Objective
-To develop an affordable, decentralized, and community-driven disaster warning solution that can improve emergency preparedness and provide timely alerts in vulnerable areas with limited network infrastructure.
+## Repository Structure
+
+```text
+EarlyGuard/
+│
+├── Code/
+│   ├── ESP32_Node_1/
+│   │   └── ESP32_Node_1.ino
+│   ├── ESP32_Node_2/
+│   │   └── ESP32_Node_2.ino
+│   └── ESP32_Node_3/
+│       └── ESP32_Node_3.ino
+│
+├── Documentation/
+│   └── HARDWARE_AND_UPLOAD_NOTES.md
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+## Mesh Network Configuration
+
+The firmware uses the following mesh configuration:
+
+| Parameter | Configuration |
+|---|---|
+| Mesh Name | `EarlyGuardMesh` |
+| Mesh Password | `EarlyGuard123` |
+| Mesh Port | `5555` |
+| Communication | painlessMesh |
+| Data Format | JSON |
+
+## Getting Started
+
+1. Clone or download this repository.
+2. Open the required `.ino` file from the corresponding node folder in Arduino IDE.
+3. Install the required libraries: painlessMesh, ArduinoJson, DHT sensor library, Adafruit Unified Sensor and Adafruit ADXL345.
+4. Select the appropriate ESP32 board and port.
+5. Upload the corresponding firmware to each ESP32 node.
+6. Power the nodes and observe their mesh communication and warning outputs.
+
+Refer to [Hardware and Upload Notes](Documentation/HARDWARE_AND_UPLOAD_NOTES.md) for additional information.
+
+## Current Project Status
+
+**Development Stage: Prototype / In Progress**
+
+The firmware and multi-node architecture are being organized and developed. Further testing, calibration and validation are required.
+
+## Limitations and Safety Disclaimer
+
+EarlyGuard is an experimental academic prototype. It is not a certified disaster prediction or life-safety warning system.
+
+Sensor thresholds require calibration and field validation. A landslide risk indicator represents sensor-based environmental conditions, not a confirmed prediction of a landslide.
+
+## Future Scope
+
+- Improve sensor calibration and alert reliability.
+- Conduct extended mesh communication testing.
+- Optimize power consumption for remote deployment.
+- Expand the number of sensor and receiver nodes.
+- Develop weather-resistant hardware enclosures.
+- Perform field testing in different environmental conditions.
+
+## Project Purpose
+
+To explore an affordable, community-oriented approach to local disaster awareness using IoT sensors, ESP32 devices and wireless mesh networking.
+
+---
+
+**EarlyGuard – Building awareness through connected communities.**
