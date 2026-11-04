@@ -147,3 +147,6 @@ To explore an affordable, community-oriented approach to local disaster awarenes
 ---
 
 **EarlyGuard – Building awareness through connected communities.**
+## License
+
+This project is licensed under the terms of the LICENSE file included in this repository.
