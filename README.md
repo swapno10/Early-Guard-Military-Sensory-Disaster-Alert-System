@@ -94,7 +94,7 @@ Refer to [Hardware and Upload Notes](Documentation/HARDWARE_AND_UPLOAD_NOTES.md)
 
 ## Current Project Status
 
-**Development Stage: Prototype / In Progress**
+Project Status: Completed Prototype
 
 The firmware and multi-node architecture are being organized and developed. Further testing, calibration and validation are required.
 
