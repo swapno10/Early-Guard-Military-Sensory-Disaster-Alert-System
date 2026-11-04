@@ -1,4 +1,9 @@
 <p align="center">
+  <img src="Images/earlyguard_banner.png"
+       alt="EarlyGuard - Community-Driven Disaster Early Warning System"
+       width="100%">
+</p>
+<p align="center">
   <h1 align="center">🚨 EarlyGuard</h1>
   <p align="center">
     Community-Driven Disaster Early Warning System
