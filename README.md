@@ -1,3 +1,14 @@
+<p align="center">
+  <h1 align="center">🚨 EarlyGuard</h1>
+  <p align="center">
+    Community-Driven Disaster Early Warning System
+  </p>
+  <p align="center">
+    ESP32 • IoT Sensors • Wireless Mesh Network
+  </p>
+</p>
+
+---
 # EarlyGuard – Community-Driven Disaster Early Warning System
 
 <p align="center">
