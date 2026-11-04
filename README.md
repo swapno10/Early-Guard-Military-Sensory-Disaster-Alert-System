@@ -14,11 +14,6 @@
 </p>
 
 ---
-# EarlyGuard – Community-Driven Disaster Early Warning System
-
-<p align="center">
-  <strong>An ESP32-Based Mesh Network for Local Disaster Alerting</strong>
-</p>
 
 ## About the Project
 
